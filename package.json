@@ -1,0 +1,20 @@
+{
+  "name": "linkpulse-studio",
+  "version": "1.0.0",
+  "description": "LinkPulse Studio - URL shortener with password protection, analytics and QR codes",
+  "main": "server.js",
+  "type": "commonjs",
+  "engines": { "node": ">=22.13.0" },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server.js",
+    "dev": "node --disable-warning=ExperimentalWarning --watch server.js",
+    "test": "node --disable-warning=ExperimentalWarning --test test/app.test.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "qrcode": "^1.5.4"
+  }
+}

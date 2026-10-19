@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: linkpulse-studio
+    runtime: node
+    plan: starter            # persistent disks require a paid plan
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: 22.22.0
+      - key: NODE_ENV
+        value: production
+      - key: DB_PATH
+        value: /var/data/linkpulse.db
+      # Optional: BASE_URL for a custom domain (e.g. https://go.example.com).
+      # If unset, Render's RENDER_EXTERNAL_URL is used automatically.
+    disk:
+      name: linkpulse-data
+      mountPath: /var/data
+      sizeGB: 1
