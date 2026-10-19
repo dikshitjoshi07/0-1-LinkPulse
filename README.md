@@ -19,12 +19,11 @@ View and search saved links, check their status, and use available controls to c
 ### 3. QR Code Generation
 Generate and download QR codes for short links, making them convenient to share in print and digital formats.
 
-![LinkPulse Studio - QR Codes](screenshots/qr-codes.png)
+
 
 ### 4. Settings and Help
 View the short-link base URL, understand how redirects work, and review guidance about aliases, password protection, and security.
 
-![LinkPulse Studio - Settings and Help](screenshots/settings-help.png)
 
 ## Key Features
 
